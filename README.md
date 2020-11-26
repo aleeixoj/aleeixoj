@@ -1,16 +1,15 @@
-### Hi there 👋
+👋   Hi, I'm Aleixo, a person passionate about technology and development.
+ 
 
-<!--
-**aleeixoj/aleeixoj** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+👨🏻‍💻  About Me
+👨🏻‍💻   I started programming at the age of 12, where I wanted to make a game website and since then it has become my profession, seeking more and more knowledge and learning about new technologies.
+📖   I am currently in the last period of Analysis and systems development.
+🛠  Tech Stack
+💻  Front-end:
+HTML CSS PHP JavaScript TypeScript React Next.js
 
-Here are some ideas to get you started:
+⚙️  Back-end and database:
+Node.js PHP MySQL PostgreSQL MongoDB 
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+🚀  A Little More About My Profile
+Aleixo Junior GitHub Stats
