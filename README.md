@@ -1,8 +1,8 @@
 <h1>👋 &nbsp; Hi, I'm Aleixo, a person passionate about technology and development.</h1>
 
 <p align="center">
-<a href="https://www.instagram.com/aleeixoj"><img src="https://img.shields.io/badge/-@gusta.vt-E4405F?style=flat-square&logo=Instagram&logoColor=white"/></a>
-<a href="https://https://www.linkedin.com/in/aleixo-junior-041a6b1b8/"><img src="http://img.shields.io/badge/-Gustavo%20Santos-0077B5?style=flat-square&logo=Linkedin&logoColor=white"/></a>
+<a href="https://www.instagram.com/aleeixoj"><img src="https://img.shields.io/badge/-@aleeixoj-E4405F?style=flat-square&logo=Instagram&logoColor=white"/></a>
+<a href="https://https://www.linkedin.com/in/aleixo-junior-041a6b1b8/"><img src="http://img.shields.io/badge/-aleixo-junior-041a6b1b8?style=flat-square&logo=Linkedin&logoColor=white"/></a>
 
 </p>
 
