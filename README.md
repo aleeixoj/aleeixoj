@@ -9,7 +9,7 @@
 <h2> 👨🏻‍💻 &nbsp;About Me </h2>
 
 - 👨🏻‍💻 &nbsp; I started programming at the age of 13, where I wanted to make a game website and since then it has become my profession, seeking more and more knowledge and learning about new technologies.
-- 📖 &nbsp;I am currently in the last period of Analysis and systems development.
+- 📖 &nbsp;I recently graduated in Systems Analysis and Development.
 
 <h2> 🛠 &nbsp;Tech Stack</h2>
 <h3>💻 &nbsp;Front-end:</h3>
