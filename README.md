@@ -2,7 +2,7 @@
 
 <p align="center">
 <a href="https://www.instagram.com/aleeixoj"><img src="https://img.shields.io/badge/-@aleeixoj-E4405F?style=flat-square&logo=Instagram&logoColor=white"/></a>
-<a href="https://https://www.linkedin.com/in/aleixo-junior-041a6b1b8/"><img src="http://img.shields.io/badge/-Aleixo%20Junior-0077B5?style=flat-square&logo=Linkedin&logoColor=white"/></a> 
+<a href="https://www.linkedin.com/in/aleeixoj/"><img src="http://img.shields.io/badge/-Aleixo%20Junior-0077B5?style=flat-square&logo=Linkedin&logoColor=white"/></a> 
 
 </p>
 
