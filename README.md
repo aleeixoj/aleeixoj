@@ -30,6 +30,7 @@
 ![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-333333?style=flat&logo=postgresql&)
 
 <h3>🚀 &nbsp;Others techs: </h3>
+
 ![C#](https://docs.microsoft.com/pt-br/dotnet/csharp/)
 ![C++](https://docs.microsoft.com/pt-br/cpp/cpp/?view=msvc-160)
 ![C](https://docs.microsoft.com/pt-br/cpp/c-language/?view=msvc-160)
