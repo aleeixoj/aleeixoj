@@ -29,6 +29,12 @@
 ![MySQL](https://img.shields.io/badge/-MySQL-333333?style=flat&logo=mysql)
 ![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-333333?style=flat&logo=postgresql&)
 
+<h3>🚀 &nbsp;Others techs: </h3>
+![C#](https://docs.microsoft.com/pt-br/dotnet/csharp/)
+![C++](https://docs.microsoft.com/pt-br/cpp/cpp/?view=msvc-160)
+![C](https://docs.microsoft.com/pt-br/cpp/c-language/?view=msvc-160)
+![VB.NET](https://docs.microsoft.com/pt-br/dotnet/visual-basic/)
+
 <h2>🚀 &nbsp;A Little More About My Profile</h2>
 
 [![Aleixo's GitHub Stats](https://github-readme-stats.vercel.app/api?username=aleeixoj)](https://github.com/anuraghazra/github-readme-stats)
