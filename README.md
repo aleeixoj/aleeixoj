@@ -31,10 +31,10 @@
 
 <h3>🚀 &nbsp;Others techs: </h3>
 
-![C#](https://docs.microsoft.com/pt-br/dotnet/csharp/)
-![C++](https://docs.microsoft.com/pt-br/cpp/cpp/?view=msvc-160)
-![C](https://docs.microsoft.com/pt-br/cpp/c-language/?view=msvc-160)
-![VB.NET](https://docs.microsoft.com/pt-br/dotnet/visual-basic/)
+![C#](https://img.shields.io/badge/-CSharp-333333?style=flat&logo=c-sharp)
+![C++](https://img.shields.io/badge/-C++-333333?style=flat&logo=cplusplus)
+![C](https://img.shields.io/badge/--333333?style=flat&logo=C)
+![VB.NET](https://img.shields.io/badge/-VB.NET-333333?style=flat&logo=dot-net)
 
 <h2>🚀 &nbsp;A Little More About My Profile</h2>
 
