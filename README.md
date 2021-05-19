@@ -38,4 +38,5 @@
 
 <h2>🚀 &nbsp;A Little More About My Profile</h2>
 
-[![Aleixo's GitHub Stats](https://github-readme-stats.vercel.app/api?username=aleeixoj)](https://github.com/anuraghazra/github-readme-stats)
+[![Top Linguagens](https://github-readme-stats.vercel.app/api/top-langs/?username=aleeixoj&layout=compact&theme=omni&hide_border=true&cache_seconds=2000)](https://github.com/aleeixoj)
+[![Gustavo Santos's GitHub Stats](https://github-readme-stats.vercel.app/api?username=aleeixo&show_icons=true&hide_border=true&theme=omni)](https://github.com/aleeixoj)
