@@ -28,6 +28,7 @@
 ![PHP](https://img.shields.io/badge/-PHP-333333?style=flat&logo=php&logoColor=474A8A)
 ![MySQL](https://img.shields.io/badge/-MySQL-333333?style=flat&logo=mysql)
 ![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-333333?style=flat&logo=postgresql&)
+![MongoDB](https://img.shields.io/badge/-MongoDB-333333?style=flat&logo=mongodb&)
 
 <h3>🚀 &nbsp;Others techs: </h3>
 
