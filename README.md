@@ -41,3 +41,5 @@
 
 [![Top Linguagens](https://github-readme-stats.vercel.app/api/top-langs/?username=aleeixoj&layout=compact&theme=omni&hide_border=true&cache_seconds=2000)](https://github.com/aleeixoj)
 [![Aleixo's GitHub Stats](https://github-readme-stats.vercel.app/api?username=aleeixoj&show_icons=true&hide_border=true&theme=omni)](https://github.com/aleeixoj)
+
+![Tetris](tetris.gif)
