@@ -2,7 +2,7 @@ name: Atualizar Tetris no README
 
 on:
   schedule:
-    - cron: "0 * * * *"  # Atualiza a cada 1 hora
+    - cron: "*/1 * * * *"  # Atualiza a cada 1 minuto
   workflow_dispatch:
 
 jobs:
