@@ -1,46 +1,57 @@
-import numpy as np
-import imageio
-import matplotlib.pyplot as plt
-import time
-from matplotlib.backends.backend_agg import FigureCanvasAgg as FigureCanvas
+import random
 
-# Configuração do tabuleiro do Tetris
-ROWS, COLS = 20, 10
-frames = []
+grid_size = (10, 20)  # 10 colunas x 20 linhas
 
-# Cores para os blocos
-colors = ["black", "red", "blue", "green", "yellow", "purple", "orange", "cyan"]
+tetris_pieces = [
+    [[1, 1, 1, 1]],  # I
+    [[1, 1], [1, 1]],  # O
+    [[0, 1, 1], [1, 1, 0]],  # S
+    [[1, 1, 0], [0, 1, 1]],  # Z
+    [[1, 1, 1], [0, 1, 0]],  # T
+    [[1, 1, 1], [1, 0, 0]],  # L
+    [[1, 1, 1], [0, 0, 1]]   # J
+]
 
-def generate_frame(board):
-    fig, ax = plt.subplots(figsize=(3, 6))
-    canvas = FigureCanvas(fig)
-    ax.set_xticks([])
-    ax.set_yticks([])
-    ax.set_frame_on(False)
-    
-    for r in range(ROWS):
-        for c in range(COLS):
-            color = colors[board[r, c]]
-            ax.add_patch(plt.Rectangle((c, ROWS - r - 1), 1, 1, color=color, ec="gray"))
-    
-    plt.xlim(0, COLS)
-    plt.ylim(0, ROWS)
-    
-    canvas.draw()
-    image = np.frombuffer(canvas.buffer_rgba(), dtype=np.uint8)
-    image = image.reshape(fig.canvas.get_width_height()[::-1] + (4,))
-    frames.append(image)
-    plt.close(fig)
+green_shades = ["🟩", "🟨", "🟩", "🟦", "🟩"]  # Vários tons de verde
+empty_cell = "⬛"
 
-def simulate_tetris():
-    board = np.zeros((ROWS, COLS), dtype=int)
-    for i in range(10):  # Simula 10 movimentos
-        piece_color = np.random.randint(1, len(colors))
-        col = np.random.randint(0, COLS - 1)
-        board[np.random.randint(0, ROWS), col] = piece_color
-        generate_frame(board)
-        time.sleep(0.2)  # Simula movimento
+def place_piece(board, piece):
+    piece_color = random.choice(green_shades)
+    start_col = random.randint(0, grid_size[0] - len(piece[0]))
+    start_row = random.randint(0, grid_size[1] - len(piece))
     
-simulate_tetris()
-imageio.mimsave("tetris.gif", frames, duration=0.2)
-print("GIF do Tetris gerado!")
+    for r in range(len(piece)):
+        for c in range(len(piece[r])):
+            if piece[r][c] == 1:
+                board[start_row + r][start_col + c] = piece_color
+
+def generate_tetris_board():
+    board = [[empty_cell for _ in range(grid_size[0])] for _ in range(grid_size[1])]
+    for _ in range(5):  # Coloca 5 peças aleatórias
+        piece = random.choice(tetris_pieces)
+        place_piece(board, piece)
+    return board
+
+def board_to_markdown(board):
+    return "\n".join(["".join(row) for row in board])
+
+def update_readme():
+    with open("README.md", "r") as file:
+        content = file.readlines()
+    
+    start_marker = "<!-- TETRIS-GRID-START -->"
+    end_marker = "<!-- TETRIS-GRID-END -->"
+    
+    start_index = content.index(start_marker + "\n") + 1
+    end_index = content.index(end_marker + "\n")
+    
+    board = generate_tetris_board()
+    board_md = board_to_markdown(board)
+    
+    new_content = content[:start_index] + [board_md + "\n"] + content[end_index:]
+    
+    with open("README.md", "w") as file:
+        file.writelines(new_content)
+
+if __name__ == "__main__":
+    update_readme()
