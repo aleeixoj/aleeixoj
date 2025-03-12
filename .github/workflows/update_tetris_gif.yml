@@ -1,12 +1,12 @@
-name: Atualizar GIF do Tetris
+name: Atualizar Tetris no README
 
 on:
   schedule:
-    - cron: "0 * * * *" # Roda a cada hora
-  workflow_dispatch: # Permite rodar manualmente
+    - cron: "0 * * * *"  # Atualiza a cada 1 hora
+  workflow_dispatch:
 
 jobs:
-  update-gif:
+  update-readme:
     runs-on: ubuntu-latest
     steps:
       - name: Clonar repositório
@@ -17,16 +17,14 @@ jobs:
         with:
           python-version: '3.x'
 
-      - name: Instalar dependências
-        run: pip install numpy imageio matplotlib
+      - name: Executar script de atualização
+        run: |
+          python tetris.py
 
-      - name: Gerar novo GIF do Tetris
-        run: python tetris.py
-
-      - name: Commit e push do novo GIF
+      - name: Commit e push
         run: |
           git config --global user.name "github-actions"
           git config --global user.email "github-actions@github.com"
-          git add tetris.gif
-          git commit -m "Atualizando GIF do Tetris"
+          git add README.md
+          git commit -m "Atualizando Tetris no README"
           git push
