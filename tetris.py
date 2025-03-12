@@ -2,6 +2,7 @@ import numpy as np
 import imageio
 import matplotlib.pyplot as plt
 import time
+from matplotlib.backends.backend_agg import FigureCanvasAgg as FigureCanvas
 
 # Configuração do tabuleiro do Tetris
 ROWS, COLS = 20, 10
@@ -12,6 +13,7 @@ colors = ["black", "red", "blue", "green", "yellow", "purple", "orange", "cyan"]
 
 def generate_frame(board):
     fig, ax = plt.subplots(figsize=(3, 6))
+    canvas = FigureCanvas(fig)
     ax.set_xticks([])
     ax.set_yticks([])
     ax.set_frame_on(False)
@@ -24,9 +26,9 @@ def generate_frame(board):
     plt.xlim(0, COLS)
     plt.ylim(0, ROWS)
     
-    fig.canvas.draw()
-    image = np.frombuffer(fig.canvas.tostring_rgb(), dtype=np.uint8)
-    image = image.reshape(fig.canvas.get_width_height()[::-1] + (3,))
+    canvas.draw()
+    image = np.frombuffer(canvas.buffer_rgba(), dtype=np.uint8)
+    image = image.reshape(fig.canvas.get_width_height()[::-1] + (4,))
     frames.append(image)
     plt.close(fig)
 
